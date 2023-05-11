@@ -32,9 +32,10 @@ argv[0]에 fmd5가 저장되어 있을 경우 ssu_find-fmd5가 fork, exec되게 
 5. datastruct.h<br>
  프로그램을 설계할 때 이중 linked list와 queue를 직접 구현해야 한다는 것을 인지하여 자료구조의 구조체와 함수 선언부를 담는 datastruct.h 헤더파일을 설계하였습니다.<br><br>
  
- #### 함수 콜 그래프
+ ## 전체 함수 콜 그래프
  
  ![IMG_0175](https://github.com/yimhyeongjun/Delete_Duplicated_Files_on_Linux_System/assets/64363668/37fe3da5-8a0a-4be3-a507-c524bfe74107)
 <br><br>
  
+
  
