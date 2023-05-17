@@ -1,7 +1,7 @@
 # Delete_Duplicated_Files_on_Linux_System
 
 ## 개요
- ssu_sdup 프로그램은 사용자가 요구하는 조건에 맞는 중복되는 파일을 찾고 삭제하는 프로그램입니다. 이 프로그램은 ssu_sdup.c, ssu_find-fmd5.c, ssu_find-sha1.c, ssu_help.c 총 4개의 .c파일과 .c파일을 컴파일해주는 makefile로 구성되어 있으며 makefile의 결과물로 ssu_sdup 파일이 완성되고 이 과정에서 ssu_find-fmd5, ssu_find-sha1, ssu_help라는 이름의 실행 파일이 완성됩니다. <br>
+ ssu_sdup 프로그램은 사용자가 요구하는 조건에 맞는 중복되는 파일을 찾고 삭제하는 프로그램입니다.<br> 이 프로그램은 ssu_sdup.c, ssu_find-fmd5.c, ssu_find-sha1.c, ssu_help.c 총 4개의 .c파일과 .c파일을 컴파일해주는 makefile로 구성되어 있으며 makefile의 결과물로 ssu_sdup 파일이 완성되고 이 과정에서 ssu_find-fmd5, ssu_find-sha1, ssu_help라는 이름의 실행 파일이 완성됩니다. <br>
  ssu_sdup는 명령 프롬프트 창으로 20182649> 라는 입력창이 출력되고 입력창에 명령어를 입력하면 명령어를 토큰화하여 char \*argv[] 배열에 순차적으로 저장합니다. <br>
 argv[0]에 fmd5가 저장되어 있을 경우 ssu_find-fmd5가 fork, exec되게 하는 방식으로 프로그램이 작동합니다. 마찬가지로 argv[0]에 sha1이 저장되어 있다면 ssu_find –sha1이, help가 저장되어 있다면 ssu_help가 fork, exec 하여 수행됩니다. 만약 argv[0]에 exit가 들어올 경우 프로그램이 종료되며 이외의 명령어가 들어올 경우 ssu_help를 fork, exec하여 실행시킵니다.<br>
  ssu_find-fmd5는 ssu_sdup에 의해 exec될 때 총 5개의 인자를 받아 실행되게 됩니다.<br> 
